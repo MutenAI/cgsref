@@ -1,0 +1,24 @@
+{
+  "id": "6a0dd9ca-f507-40fb-bbe3-2636a98f50c7",
+  "title": "",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "f7a20347-797c-4c6d-9c7f-684092c9aad0",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "finace and womend ",
+  "tags": [],
+  "metrics": {
+    "word_count": 260,
+    "character_count": 1962,
+    "reading_time_minutes": 1.3,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-25T12:27:54.893676",
+  "updated_at": "2025-07-25T12:27:54.893677",
+  "published_at": null,
+  "version": 1
+}

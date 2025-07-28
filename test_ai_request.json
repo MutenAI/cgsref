@@ -1,0 +1,13 @@
+{
+  "topic": "The Future of AI in Personal Finance",
+  "content_type": "article",
+  "content_format": "markdown",
+  "client_profile": "siebert",
+  "workflow_type": "enhanced_article",
+  "target": "Young professionals interested in AI and personal finance",
+  "context": "Focus on practical AI tools and applications for managing personal finances",
+  "target_word_count": 600,
+  "provider": "openai",
+  "model": "gpt-4o",
+  "temperature": 0.7
+}

@@ -1,0 +1,55 @@
+{
+  "id": "e56d9301-c6db-40b9-b96e-9b5863b2b7f8",
+  "title": "Article: Test finale con il nuovo processo",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "d71bb383-d2b0-41f8-8e84-99632c5d238e",
+  "client_profile": null,
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": null,
+    "generation_params": {
+      "topic": "Test finale con il nuovo processo",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 800,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "business executives",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "Test finale con il nuovo processo",
+      "client": "default",
+      "target_audience": "business executives",
+      "word_count": 11,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": false
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T11:13:15.177939",
+  "updated_at": "2025-07-27T11:13:15.177943",
+  "published_at": null,
+  "version": 1
+}

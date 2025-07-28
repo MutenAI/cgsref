@@ -1,0 +1,24 @@
+{
+  "id": "9e7ceb4b-30c0-4f63-8515-441bc092646f",
+  "title": "Understanding Test Topic: A Comprehensive Overview",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "2f2582f6-2c33-4197-a89c-87a48329460a",
+  "client_profile": null,
+  "target_audience": "general",
+  "topic": "Test Topic",
+  "tags": [],
+  "metrics": {
+    "word_count": 708,
+    "character_count": 5281,
+    "reading_time_minutes": 3.54,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-24T18:05:27.455592",
+  "updated_at": "2025-07-24T18:05:27.455595",
+  "published_at": null,
+  "version": 1
+}

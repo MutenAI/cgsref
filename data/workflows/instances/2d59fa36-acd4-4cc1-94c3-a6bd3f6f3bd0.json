@@ -1,0 +1,60 @@
+{
+  "id": "2d59fa36-acd4-4cc1-94c3-a6bd3f6f3bd0",
+  "name": "content_generation_f318f759",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "7880b120-9619-4b7c-a719-df38cb364844",
+      "name": "research",
+      "description": "Research comprehensive information about: AI in Finance for Gen Z",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:07:15.369644",
+      "started_at": "2025-07-25T10:07:15.370442",
+      "completed_at": "2025-07-25T10:07:15.370473",
+      "metadata": {}
+    },
+    {
+      "id": "adbc7c17-7256-4a81-8097-d0f72a1ec3b8",
+      "name": "writing",
+      "description": "Create article content about: AI in Finance for Gen Z",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "7880b120-9619-4b7c-a719-df38cb364844"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:07:15.369654",
+      "started_at": "2025-07-25T10:07:15.370572",
+      "completed_at": "2025-07-25T10:07:15.370614",
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": null,
+  "target_audience": "general",
+  "context": {},
+  "status": "failed",
+  "result": {
+    "final_output": "",
+    "task_outputs": {},
+    "metadata": {},
+    "execution_time": null,
+    "error_message": "WorkflowResult.__init__() got an unexpected keyword argument 'output'"
+  },
+  "created_at": "2025-07-25T10:07:15.369630",
+  "started_at": "2025-07-25T10:07:15.370146",
+  "completed_at": "2025-07-25T10:07:15.370667",
+  "metadata": {}
+}

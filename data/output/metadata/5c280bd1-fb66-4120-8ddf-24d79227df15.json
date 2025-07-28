@@ -1,0 +1,55 @@
+{
+  "id": "5c280bd1-fb66-4120-8ddf-24d79227df15",
+  "title": "Article: test",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "4b42528a-28b3-475c-ba1c-66d3605bae23",
+  "client_profile": "default",
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": "enhanced_article",
+    "generation_params": {
+      "topic": "test",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 300,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "general",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "test",
+      "client": "default",
+      "target_audience": "general",
+      "word_count": 11,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": false
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T10:14:00.324641",
+  "updated_at": "2025-07-27T10:14:00.324642",
+  "published_at": null,
+  "version": 1
+}

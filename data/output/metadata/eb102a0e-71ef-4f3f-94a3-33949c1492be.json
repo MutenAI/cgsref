@@ -1,0 +1,24 @@
+{
+  "id": "eb102a0e-71ef-4f3f-94a3-33949c1492be",
+  "title": "Understanding Test Topic: An Informative Guide",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "bc7f44c4-d756-4b68-870c-a9ede6f2af93",
+  "client_profile": null,
+  "target_audience": "general",
+  "topic": "Test Topic",
+  "tags": [],
+  "metrics": {
+    "word_count": 702,
+    "character_count": 5136,
+    "reading_time_minutes": 3.51,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-24T18:04:26.068106",
+  "updated_at": "2025-07-24T18:04:26.068109",
+  "published_at": null,
+  "version": 1
+}

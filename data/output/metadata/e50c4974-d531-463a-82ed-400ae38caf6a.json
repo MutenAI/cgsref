@@ -1,0 +1,55 @@
+{
+  "id": "e50c4974-d531-463a-82ed-400ae38caf6a",
+  "title": "Article: The Future of AI in Personal Finance",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "a8f21f4d-5fe3-4d1a-b26e-4134ba2e8673",
+  "client_profile": "siebert",
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": "enhanced_article",
+    "generation_params": {
+      "topic": "The Future of AI in Personal Finance",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 600,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "general",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "The Future of AI in Personal Finance",
+      "client": "siebert",
+      "target_audience": "general",
+      "word_count": 632,
+      "research_depth": "comprehensive",
+      "includes_data": true,
+      "includes_trends": true
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T21:14:44.485353",
+  "updated_at": "2025-07-27T21:14:44.485357",
+  "published_at": null,
+  "version": 1
+}

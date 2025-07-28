@@ -1,0 +1,54 @@
+{
+  "id": "2ce876ae-f3d6-4ddc-9e01-1c61d4d5e326",
+  "name": "content_generation_4d8eb584",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "604cb241-239e-4626-9cc2-2ad00da83ab4",
+      "name": "research",
+      "description": "Research comprehensive information about: AI in Finance for Gen Z",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-25T10:09:37.214458",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    },
+    {
+      "id": "7b604e2a-4128-4753-b7a3-9484a9259ef7",
+      "name": "writing",
+      "description": "Create article content about: AI in Finance for Gen Z",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "604cb241-239e-4626-9cc2-2ad00da83ab4"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-25T10:09:37.214467",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "context": {},
+  "status": "ready",
+  "result": null,
+  "created_at": "2025-07-25T10:09:37.214448",
+  "started_at": null,
+  "completed_at": null,
+  "metadata": {}
+}

@@ -1,0 +1,55 @@
+{
+  "id": "66d7c82e-f17d-45d1-9a34-cd21b24ec0c9",
+  "title": "Article: Finance women and difference with jews",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "0e69c2b9-ab99-4658-977b-134930e55505",
+  "client_profile": "siebert",
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": "enhanced_article",
+    "generation_params": {
+      "topic": "Finance women and difference with jews",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 395,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": false,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "general",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "Finance women and difference with jews",
+      "client": "siebert",
+      "target_audience": "general",
+      "word_count": 11,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": false
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T09:44:56.814643",
+  "updated_at": "2025-07-27T09:44:56.814644",
+  "published_at": null,
+  "version": 1
+}

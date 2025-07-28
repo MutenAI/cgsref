@@ -1,0 +1,54 @@
+{
+  "id": "dc3703db-340e-4049-86f0-6f838a14111d",
+  "name": "content_generation_ee1cb9d0",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "08e6583c-3acd-4d8c-b852-bf8f37615790",
+      "name": "research",
+      "description": "Research comprehensive information about: AI in Finance for Gen Z",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-25T10:05:35.068017",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    },
+    {
+      "id": "8dbe2015-1e20-4ac4-8f40-218d2c931f2b",
+      "name": "writing",
+      "description": "Create article content about: AI in Finance for Gen Z",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "08e6583c-3acd-4d8c-b852-bf8f37615790"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-25T10:05:35.068028",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": null,
+  "target_audience": "general",
+  "context": {},
+  "status": "ready",
+  "result": null,
+  "created_at": "2025-07-25T10:05:35.068003",
+  "started_at": null,
+  "completed_at": null,
+  "metadata": {}
+}

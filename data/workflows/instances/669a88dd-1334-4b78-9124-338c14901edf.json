@@ -1,0 +1,121 @@
+{
+  "id": "669a88dd-1334-4b78-9124-338c14901edf",
+  "name": "content_generation_d2669b58",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "2be48593-47af-4716-bad0-f9fe2b145b3d",
+      "name": "research",
+      "description": "Research comprehensive information about: AI in Finance for Gen Z",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:10:31.459123",
+      "started_at": "2025-07-25T10:10:31.462188",
+      "completed_at": "2025-07-25T10:10:31.462220",
+      "metadata": {}
+    },
+    {
+      "id": "8498381e-939c-44d0-b9cd-27d1cdbb2803",
+      "name": "writing",
+      "description": "Create article content about: AI in Finance for Gen Z",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "2be48593-47af-4716-bad0-f9fe2b145b3d"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:10:31.459131",
+      "started_at": "2025-07-25T10:10:31.462247",
+      "completed_at": "2025-07-25T10:10:31.462269",
+      "metadata": {}
+    },
+    {
+      "id": "a75d03bf-105e-4cdc-92f8-e1e2f06474d2",
+      "name": "task1_brief",
+      "description": "\nTASK 1 - SETTING & BRIEF CREATION:\nRecupera tutto il contenuto del cliente selezionato e crea un brief di lavoro completo che integri:\n\nINPUT SOURCES:\n- Topic richiesto: {topic}\n- Contesto aggiuntivo: {context}\n- Target audience: {target_audience}\n- Cliente selezionato: {client_name}\n- Knowledge base del cliente (utilizzando RAG Content Retriever)\n\nOBIETTIVI:\n1. Analizza la knowledge base del cliente per comprendere brand voice, style guidelines, e contenuti esistenti\n2. Integra le informazioni dall'interfaccia (topic, contesto, target)\n3. Crea un brief strutturato che serva da riferimento per gli altri agent\n4. Definisci chiaramente ruoli, obiettivi e output richiesto\n\nSTRUTTURA DEL BRIEF:\n- Executive Summary del progetto\n- Brand Context & Guidelines (dal RAG)\n- Topic Analysis & Objectives\n- Target Audience Profile\n- Content Requirements & Specifications\n- Agent Roles & Responsibilities\n- Success Criteria & Expected Output\n            ",
+      "expected_output": "A comprehensive project brief in markdown format containing all specified sections",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:10:31.461491",
+      "started_at": "2025-07-25T10:10:31.462291",
+      "completed_at": "2025-07-25T10:10:31.462309",
+      "metadata": {}
+    },
+    {
+      "id": "4e2f978a-7ebc-4833-8e6f-97743cc625be",
+      "name": "task2_research",
+      "description": "\nTASK 2 - WEB RESEARCH & BRIEF ENHANCEMENT:\nRicevi il brief creato nel Task precedente e arricchiscilo con ricerche web aggiornate e pertinenti.\n\nCONTEXT FROM PREVIOUS TASK:\nIl task precedente ha creato un brief completo. Utilizza questo brief come base e arricchiscilo.\n\nINPUT:\n{{task1_brief}}\n\nOBIETTIVI:\n1. Analizza il brief ricevuto per identificare gap informativi\n2. Conduci ricerche web mirate su:\n   - Trend attuali relativi a {topic}\n   - Statistiche e dati recenti\n   - Best practices del settore\n   - Casi studio rilevanti\n3. Integra le informazioni trovate nel brief esistente\n4. Affina e migliora le sezioni del brief con dati aggiornati\n\nFOCUS AREAS:\n- Cerca informazioni che supportino gli obiettivi definiti nel brief\n- Identifica opportunità per differenziare il contenuto\n- Trova dati e statistiche che rafforzino i messaggi chiave\n            ",
+      "expected_output": "Enhanced brief with web research integration in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "a75d03bf-105e-4cdc-92f8-e1e2f06474d2"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:10:31.461498",
+      "started_at": "2025-07-25T10:10:31.462336",
+      "completed_at": "2025-07-25T10:10:31.462352",
+      "metadata": {}
+    },
+    {
+      "id": "9da718e0-587b-4837-b4cc-2f53889272f8",
+      "name": "task3_content",
+      "description": "\nTASK 3 - FINAL CONTENT CREATION:\nUtilizzando il brief arricchito del task precedente, crea l'articolo finale che rispetti tutti i requisiti definiti.\n\nCONTEXT FROM PREVIOUS TASKS:\nHai accesso al brief originale e alla ricerca web integrata. Utilizza entrambi per creare contenuto eccellente.\n\nINPUT:\n{{task2_research}}\n\nOBIETTIVI:\n1. Analizza il brief arricchito per comprendere tutti i requirements\n2. Struttura l'articolo seguendo le guidelines del brand\n3. Integra seamlessly le informazioni di ricerca con il brand voice\n4. Crea contenuto engaging che parli direttamente al target audience: {target_audience}\n5. Assicura coerenza con tutti i criteri di successo definiti nel brief\n\nCONTENT CREATION GUIDELINES:\n- Segui scrupolosamente il brand voice definito nel brief\n- Utilizza la terminologia specifica del cliente {client_name}\n- Integra naturalmente dati e statistiche dalla ricerca\n- Mantieni focus su obiettivi e target audience definiti\n- Crea un flow narrativo coinvolgente e professionale\n- Include call-to-action appropriati\n\nQUALITY ASSURANCE:\n- Verifica allineamento con brand guidelines\n- Controlla coerenza del tone of voice\n- Assicura che tutti i key messages siano inclusi\n- Valida la rilevanza per il target audience\n            ",
+      "expected_output": "A polished, publication-ready article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "4e2f978a-7ebc-4833-8e6f-97743cc625be"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T10:10:31.461503",
+      "started_at": "2025-07-25T10:10:31.462374",
+      "completed_at": "2025-07-25T10:10:31.462392",
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "context": {},
+  "status": "completed",
+  "result": {
+    "final_output": "\n# AI in Finance for Gen Z: A Comprehensive Guide for General\n\n## Introduction\n\nIn today's rapidly evolving landscape, understanding ai in finance for gen z has become essential for general. This comprehensive guide explores the key aspects, current trends, and practical implications you need to know.\n\n## Current State of AI in Finance for Gen Z\n\nThe field of ai in finance for gen z is experiencing unprecedented growth and transformation. Recent research indicates significant developments that are reshaping how we approach this domain.\n\n### Key Developments\n\n1. **Innovation Acceleration**: The pace of change has increased dramatically\n2. **Market Expansion**: New opportunities are emerging across sectors\n3. **Technology Integration**: Advanced tools are becoming more accessible\n\n## Practical Implications\n\nFor general, these developments mean:\n\n- **Enhanced Opportunities**: New avenues for growth and development\n- **Skill Requirements**: Evolving competencies needed for success\n- **Strategic Considerations**: Important factors for decision-making\n\n## Best Practices\n\nBased on current research and industry insights, here are recommended approaches:\n\n1. **Stay Informed**: Keep up with latest developments\n2. **Continuous Learning**: Invest in skill development\n3. **Strategic Planning**: Align efforts with market trends\n4. **Network Building**: Connect with industry professionals\n\n## Looking Forward\n\nThe future of ai in finance for gen z promises continued evolution and opportunity. By understanding current trends and preparing for upcoming changes, general can position themselves for success.\n\n## Conclusion\n\nAI in Finance for Gen Z represents both challenges and opportunities for general. By staying informed, adapting to change, and implementing best practices, you can navigate this dynamic landscape effectively.\n\n---\n\n*This content was generated as part of a comprehensive research and analysis process, incorporating current market trends and industry insights.*\n",
+    "task_outputs": {
+      "2be48593-47af-4716-bad0-f9fe2b145b3d": "# Task Output: research\n\n**Task Type**: TaskType.RESEARCH\n**Agent Role**: None\n**Description**: Research comprehensive information about: AI in Finance for Gen Z\n\n## Generated Content\n\nThis is a mock output for task 'research'.\nIn the full implementation, this would be replaced with actual AI agent execution.\n\n**Context Used**:\n- Client Profile: siebert\n- Target Audience: general\n- Topic: AI in Finance for Gen Z\n\n**Execution Time**: 2025-07-25T10:10:31.462216",
+      "8498381e-939c-44d0-b9cd-27d1cdbb2803": "# Task Output: writing\n\n**Task Type**: TaskType.RESEARCH\n**Agent Role**: None\n**Description**: Create article content about: AI in Finance for Gen Z\n\n## Generated Content\n\nThis is a mock output for task 'writing'.\nIn the full implementation, this would be replaced with actual AI agent execution.\n\n**Context Used**:\n- Client Profile: siebert\n- Target Audience: general\n- Topic: AI in Finance for Gen Z\n\n**Execution Time**: 2025-07-25T10:10:31.462266",
+      "a75d03bf-105e-4cdc-92f8-e1e2f06474d2": "\n# Project Brief: AI in Finance for Gen Z\n\n## Executive Summary\nThis project involves creating high-quality content about \"AI in Finance for Gen Z\" for siebert.\n\n## Brand Context & Guidelines\n- Client: siebert\n- Brand Voice: Professional yet accessible\n- Target Audience: general\n\n## Topic Analysis & Objectives\n- Main Topic: AI in Finance for Gen Z\n- Content Goals: Educate, inform, and engage the target audience\n- Key Messages: To be developed based on research\n\n## Content Requirements\n- Format: Article\n- Tone: Professional and engaging\n- Length: Comprehensive coverage of the topic\n- Include: Current trends, statistics, and actionable insights\n\n## Success Criteria\n- Alignment with brand voice\n- Relevance to target audience\n- Inclusion of current, accurate information\n- Clear, engaging writing style\n",
+      "4e2f978a-7ebc-4833-8e6f-97743cc625be": "\n# Enhanced Research Brief: AI in Finance for Gen Z\n\n## Current Market Trends\nBased on recent web research, the following trends are relevant to \"AI in Finance for Gen Z\":\n\n- Trend 1: Increasing focus on digital transformation\n- Trend 2: Growing importance of data-driven decision making\n- Trend 3: Rising demand for personalized experiences\n\n## Key Statistics\n- 75% of organizations are investing in related technologies\n- Market growth rate: 15% year-over-year\n- Consumer adoption: 60% and growing\n\n## Industry Insights\nRecent developments in the field show significant opportunities for content that addresses:\n- Practical implementation strategies\n- Common challenges and solutions\n- Future outlook and predictions\n\n## Content Opportunities\n- Educational explainers for complex concepts\n- Case studies and real-world examples\n- Actionable tips and best practices\n- Industry expert perspectives\n\n## Recommended Approach\nCreate content that combines foundational knowledge with current trends and practical applications.\n",
+      "9da718e0-587b-4837-b4cc-2f53889272f8": "\n# AI in Finance for Gen Z: A Comprehensive Guide for General\n\n## Introduction\n\nIn today's rapidly evolving landscape, understanding ai in finance for gen z has become essential for general. This comprehensive guide explores the key aspects, current trends, and practical implications you need to know.\n\n## Current State of AI in Finance for Gen Z\n\nThe field of ai in finance for gen z is experiencing unprecedented growth and transformation. Recent research indicates significant developments that are reshaping how we approach this domain.\n\n### Key Developments\n\n1. **Innovation Acceleration**: The pace of change has increased dramatically\n2. **Market Expansion**: New opportunities are emerging across sectors\n3. **Technology Integration**: Advanced tools are becoming more accessible\n\n## Practical Implications\n\nFor general, these developments mean:\n\n- **Enhanced Opportunities**: New avenues for growth and development\n- **Skill Requirements**: Evolving competencies needed for success\n- **Strategic Considerations**: Important factors for decision-making\n\n## Best Practices\n\nBased on current research and industry insights, here are recommended approaches:\n\n1. **Stay Informed**: Keep up with latest developments\n2. **Continuous Learning**: Invest in skill development\n3. **Strategic Planning**: Align efforts with market trends\n4. **Network Building**: Connect with industry professionals\n\n## Looking Forward\n\nThe future of ai in finance for gen z promises continued evolution and opportunity. By understanding current trends and preparing for upcoming changes, general can position themselves for success.\n\n## Conclusion\n\nAI in Finance for Gen Z represents both challenges and opportunities for general. By staying informed, adapting to change, and implementing best practices, you can navigate this dynamic landscape effectively.\n\n---\n\n*This content was generated as part of a comprehensive research and analysis process, incorporating current market trends and industry insights.*\n"
+    },
+    "metadata": {},
+    "execution_time": 0.000859,
+    "error_message": null
+  },
+  "created_at": "2025-07-25T10:10:31.459113",
+  "started_at": "2025-07-25T10:10:31.461555",
+  "completed_at": "2025-07-25T10:10:31.462421",
+  "metadata": {}
+}

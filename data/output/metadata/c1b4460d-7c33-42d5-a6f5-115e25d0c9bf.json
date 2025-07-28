@@ -1,0 +1,24 @@
+{
+  "id": "c1b4460d-7c33-42d5-a6f5-115e25d0c9bf",
+  "title": "Quick Test - Timeout Fix Verification",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "bfe79323-268c-418a-891c-fb64bec01c8f",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "Quick test - timeout fix verification",
+  "tags": [],
+  "metrics": {
+    "word_count": 394,
+    "character_count": 2819,
+    "reading_time_minutes": 1.97,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-25T14:53:12.311708",
+  "updated_at": "2025-07-25T14:53:12.311713",
+  "published_at": null,
+  "version": 1
+}

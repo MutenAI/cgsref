@@ -1,0 +1,24 @@
+{
+  "id": "d6feac69-84e8-40eb-b168-3cc5d8be30ad",
+  "title": "Women in Tech: Bridging the Gender Gap",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "d2c04b86-cac3-4ff4-b9db-22b79d1e251d",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "woman in tech ",
+  "tags": [],
+  "metrics": {
+    "word_count": 374,
+    "character_count": 2461,
+    "reading_time_minutes": 1.87,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-26T10:42:53.190977",
+  "updated_at": "2025-07-26T10:42:53.190978",
+  "published_at": null,
+  "version": 1
+}

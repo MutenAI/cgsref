@@ -1,0 +1,24 @@
+{
+  "id": "3ca36ebe-557b-4e3d-8922-f5ecace726a1",
+  "title": "Discovering Stefano Marrone: A Journey of Influence and Innovation",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "5edfea60-cf94-40a3-8c6f-4627381b5bf9",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "Test Template Substitution v2 - About Stefano Marrone",
+  "tags": [],
+  "metrics": {
+    "word_count": 336,
+    "character_count": 2344,
+    "reading_time_minutes": 1.68,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-26T10:37:34.778151",
+  "updated_at": "2025-07-26T10:37:34.778153",
+  "published_at": null,
+  "version": 1
+}

@@ -1,0 +1,24 @@
+{
+  "id": "51fe5d30-1099-4059-863b-7516237a2f69",
+  "title": "",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "669a88dd-1334-4b78-9124-338c14901edf",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "AI in Finance for Gen Z",
+  "tags": [],
+  "metrics": {
+    "word_count": 277,
+    "character_count": 1992,
+    "reading_time_minutes": 1.385,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-25T10:10:31.462796",
+  "updated_at": "2025-07-25T10:10:31.462798",
+  "published_at": null,
+  "version": 1
+}

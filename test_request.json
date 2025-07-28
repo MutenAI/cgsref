@@ -1,0 +1,11 @@
+{
+  "topic": "AI in Finance for Gen Z",
+  "workflow_type": "enhanced_article",
+  "client_profile": "siebert",
+  "target": "Gen Z investors interested in AI and fintech",
+  "context": "Focus on practical applications and investment opportunities",
+  "target_word_count": 800,
+  "tone": "conversational",
+  "include_statistics": true,
+  "include_examples": true
+}

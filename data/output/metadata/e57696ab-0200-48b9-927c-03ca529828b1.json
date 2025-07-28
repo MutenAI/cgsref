@@ -1,0 +1,55 @@
+{
+  "id": "e57696ab-0200-48b9-927c-03ca529828b1",
+  "title": "Article: Test Direct Task Execution",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "78637e87-65e0-4722-aacf-5a2236cca8f7",
+  "client_profile": null,
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": "enhanced_article",
+    "generation_params": {
+      "topic": "Test Direct Task Execution",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 800,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "general",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "Test Direct Task Execution",
+      "client": "default",
+      "target_audience": "general",
+      "word_count": 210,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": true
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T20:34:05.667065",
+  "updated_at": "2025-07-27T20:34:05.667066",
+  "published_at": null,
+  "version": 1
+}

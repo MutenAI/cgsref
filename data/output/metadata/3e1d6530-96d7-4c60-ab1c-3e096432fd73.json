@@ -1,0 +1,55 @@
+{
+  "id": "3e1d6530-96d7-4c60-ab1c-3e096432fd73",
+  "title": "Article: Test Simplified Workflow",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "a88be692-c5e5-45f4-9435-3a726c044bc0",
+  "client_profile": null,
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": null,
+    "generation_params": {
+      "topic": "Test Simplified Workflow",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 800,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "developers",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "Test Simplified Workflow",
+      "client": "default",
+      "target_audience": "developers",
+      "word_count": 14,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": false
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T11:29:50.396693",
+  "updated_at": "2025-07-27T11:29:50.396694",
+  "published_at": null,
+  "version": 1
+}

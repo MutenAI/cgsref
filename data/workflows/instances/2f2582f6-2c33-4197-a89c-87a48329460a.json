@@ -1,0 +1,54 @@
+{
+  "id": "2f2582f6-2c33-4197-a89c-87a48329460a",
+  "name": "content_generation_256534b2",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "7d2eab46-f7a4-4577-a8aa-f6aa62f66cac",
+      "name": "research",
+      "description": "Research comprehensive information about: Test Topic",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-24T18:05:05.279166",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    },
+    {
+      "id": "6e7831c7-a4c9-4c48-8821-de3f47b0492e",
+      "name": "writing",
+      "description": "Create article content about: Test Topic",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "7d2eab46-f7a4-4577-a8aa-f6aa62f66cac"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "pending",
+      "result": null,
+      "created_at": "2025-07-24T18:05:05.279174",
+      "started_at": null,
+      "completed_at": null,
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": null,
+  "target_audience": "general",
+  "context": {},
+  "status": "ready",
+  "result": null,
+  "created_at": "2025-07-24T18:05:05.279154",
+  "started_at": null,
+  "completed_at": null,
+  "metadata": {}
+}

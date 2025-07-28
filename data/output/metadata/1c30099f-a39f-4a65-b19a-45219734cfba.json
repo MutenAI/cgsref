@@ -1,0 +1,24 @@
+{
+  "id": "1c30099f-a39f-4a65-b19a-45219734cfba",
+  "title": "Understanding Test Quick Check: A Comprehensive Guide",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "072d2183-f86f-4538-acf5-3e1db2efc9cb",
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "topic": "Test Quick Check",
+  "tags": [],
+  "metrics": {
+    "word_count": 527,
+    "character_count": 3764,
+    "reading_time_minutes": 2.635,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {},
+  "created_at": "2025-07-25T13:51:10.899273",
+  "updated_at": "2025-07-25T13:51:10.899275",
+  "published_at": null,
+  "version": 1
+}

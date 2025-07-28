@@ -1,0 +1,55 @@
+{
+  "id": "d896bc31-5a45-47c5-b5a0-f9f9653f0bb1",
+  "title": "Article: test",
+  "content_type": "article",
+  "content_format": "markdown",
+  "status": "draft",
+  "workflow_id": "24d522e6-dbd7-4e7f-8576-a2de47e21da0",
+  "client_profile": "siebert",
+  "target_audience": "",
+  "topic": "",
+  "tags": [],
+  "metrics": {
+    "word_count": 0,
+    "character_count": 0,
+    "reading_time_minutes": 0.0,
+    "readability_score": null,
+    "sentiment_score": null
+  },
+  "metadata": {
+    "workflow_type": "enhanced_article",
+    "generation_params": {
+      "topic": "test",
+      "content_type": "article",
+      "content_format": "markdown",
+      "generation_mode": "standard",
+      "target_word_count": 400,
+      "max_word_count": null,
+      "min_word_count": null,
+      "include_sources": true,
+      "include_statistics": true,
+      "include_examples": true,
+      "tone": "professional",
+      "style": "informative",
+      "target_audience": "general",
+      "language": "en",
+      "seo_keywords": [],
+      "custom_instructions": "",
+      "metadata": {}
+    },
+    "workflow_summary": {
+      "topic": "test",
+      "client": "siebert",
+      "target_audience": "general",
+      "word_count": 192,
+      "research_depth": "basic",
+      "includes_data": false,
+      "includes_trends": true
+    },
+    "dynamic_workflow": true
+  },
+  "created_at": "2025-07-27T20:49:51.894857",
+  "updated_at": "2025-07-27T20:49:51.894860",
+  "published_at": null,
+  "version": 1
+}

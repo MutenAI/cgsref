@@ -1,0 +1,121 @@
+{
+  "id": "838e9b94-dd78-4e35-85db-6d22e7098dea",
+  "name": "content_generation_651d55ab",
+  "description": "",
+  "workflow_type": "basic",
+  "tasks": [
+    {
+      "id": "adc760ba-27ba-4f38-bc41-6dbc6b798f68",
+      "name": "research",
+      "description": "Research comprehensive information about: Test Topic",
+      "expected_output": "Detailed research findings with key points and sources",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T12:40:57.514024",
+      "started_at": "2025-07-25T12:40:57.517541",
+      "completed_at": "2025-07-25T12:40:57.517601",
+      "metadata": {}
+    },
+    {
+      "id": "64fb6888-8fb7-4210-9a6b-e767c6b17669",
+      "name": "writing",
+      "description": "Create article content about: Test Topic",
+      "expected_output": "Complete article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "adc760ba-27ba-4f38-bc41-6dbc6b798f68"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T12:40:57.514035",
+      "started_at": "2025-07-25T12:40:57.517648",
+      "completed_at": "2025-07-25T12:40:57.517692",
+      "metadata": {}
+    },
+    {
+      "id": "843e2e3b-a975-4d8d-872c-d0440d7be86a",
+      "name": "task1_brief",
+      "description": "\nTASK 1 - SETTING & BRIEF CREATION:\nRecupera tutto il contenuto del cliente selezionato e crea un brief di lavoro completo che integri:\n\nINPUT SOURCES:\n- Topic richiesto: {topic}\n- Contesto aggiuntivo: {context}\n- Target audience: {target_audience}\n- Cliente selezionato: {client_name}\n- Knowledge base del cliente (utilizzando RAG Content Retriever)\n\nOBIETTIVI:\n1. Analizza la knowledge base del cliente per comprendere brand voice, style guidelines, e contenuti esistenti\n2. Integra le informazioni dall'interfaccia (topic, contesto, target)\n3. Crea un brief strutturato che serva da riferimento per gli altri agent\n4. Definisci chiaramente ruoli, obiettivi e output richiesto\n\nSTRUTTURA DEL BRIEF:\n- Executive Summary del progetto\n- Brand Context & Guidelines (dal RAG)\n- Topic Analysis & Objectives\n- Target Audience Profile\n- Content Requirements & Specifications\n- Agent Roles & Responsibilities\n- Success Criteria & Expected Output\n            ",
+      "expected_output": "A comprehensive project brief in markdown format containing all specified sections",
+      "agent_id": null,
+      "dependencies": [],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T12:40:57.516859",
+      "started_at": "2025-07-25T12:40:57.517764",
+      "completed_at": "2025-07-25T12:40:58.789960",
+      "metadata": {}
+    },
+    {
+      "id": "4e88c543-263e-4c47-9eae-1278d85c48d0",
+      "name": "task2_research",
+      "description": "\nTASK 2 - WEB RESEARCH & BRIEF ENHANCEMENT:\nRicevi il brief creato nel Task precedente e arricchiscilo con ricerche web aggiornate e pertinenti.\n\nCONTEXT FROM PREVIOUS TASK:\nIl task precedente ha creato un brief completo. Utilizza questo brief come base e arricchiscilo.\n\nINPUT:\n{{task1_brief}}\n\nOBIETTIVI:\n1. Analizza il brief ricevuto per identificare gap informativi\n2. Conduci ricerche web mirate su:\n   - Trend attuali relativi a {topic}\n   - Statistiche e dati recenti\n   - Best practices del settore\n   - Casi studio rilevanti\n3. Integra le informazioni trovate nel brief esistente\n4. Affina e migliora le sezioni del brief con dati aggiornati\n\nFOCUS AREAS:\n- Cerca informazioni che supportino gli obiettivi definiti nel brief\n- Identifica opportunità per differenziare il contenuto\n- Trova dati e statistiche che rafforzino i messaggi chiave\n            ",
+      "expected_output": "Enhanced brief with web research integration in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "843e2e3b-a975-4d8d-872c-d0440d7be86a"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T12:40:57.516875",
+      "started_at": "2025-07-25T12:40:58.790148",
+      "completed_at": "2025-07-25T12:41:02.254072",
+      "metadata": {}
+    },
+    {
+      "id": "d82bc2ef-5f8d-4794-8e6f-a288ec61d687",
+      "name": "task3_content",
+      "description": "\nTASK 3 - FINAL CONTENT CREATION:\nUtilizzando il brief arricchito del task precedente, crea l'articolo finale che rispetti tutti i requisiti definiti.\n\nCONTEXT FROM PREVIOUS TASKS:\nHai accesso al brief originale e alla ricerca web integrata. Utilizza entrambi per creare contenuto eccellente.\n\nINPUT:\n{{task2_research}}\n\nOBIETTIVI:\n1. Analizza il brief arricchito per comprendere tutti i requirements\n2. Struttura l'articolo seguendo le guidelines del brand\n3. Integra seamlessly le informazioni di ricerca con il brand voice\n4. Crea contenuto engaging che parli direttamente al target audience: {target_audience}\n5. Assicura coerenza con tutti i criteri di successo definiti nel brief\n\nCONTENT CREATION GUIDELINES:\n- Segui scrupolosamente il brand voice definito nel brief\n- Utilizza la terminologia specifica del cliente {client_name}\n- Integra naturalmente dati e statistiche dalla ricerca\n- Mantieni focus su obiettivi e target audience definiti\n- Crea un flow narrativo coinvolgente e professionale\n- Include call-to-action appropriati\n\nQUALITY ASSURANCE:\n- Verifica allineamento con brand guidelines\n- Controlla coerenza del tone of voice\n- Assicura che tutti i key messages siano inclusi\n- Valida la rilevanza per il target audience\n            ",
+      "expected_output": "A polished, publication-ready article in markdown format",
+      "agent_id": null,
+      "dependencies": [
+        "4e88c543-263e-4c47-9eae-1278d85c48d0"
+      ],
+      "tools_required": [],
+      "context": {},
+      "priority": "high",
+      "status": "completed",
+      "result": null,
+      "created_at": "2025-07-25T12:40:57.516881",
+      "started_at": "2025-07-25T12:41:02.254215",
+      "completed_at": "2025-07-25T12:41:21.271481",
+      "metadata": {}
+    }
+  ],
+  "agent_ids": [],
+  "client_profile": "siebert",
+  "target_audience": "general",
+  "context": {},
+  "status": "completed",
+  "result": {
+    "final_output": "# Understanding the Basics of Financial Literacy: A Guide for Everyone\n\nIn today's fast-paced world, financial literacy is no longer a luxury but a necessity. Whether you're a student, a young professional, or nearing retirement, understanding how to manage your finances can significantly impact your quality of life. This article explores the key elements of financial literacy, tailored to a general audience, and provides insights into why it's crucial for everyone.\n\n## What is Financial Literacy?\n\nFinancial literacy refers to the ability to understand and effectively use various financial skills, including personal financial management, budgeting, and investing. It involves knowledge of financial principles and concepts such as financial planning, interest rates, compounding, credit management, and the benefits of saving for the future.\n\n### Importance of Financial Literacy\n\n1. **Empowerment**: Financial literacy empowers individuals to make informed decisions about their money. It helps you understand the implications of financial choices and enables you to plan for the future.\n   \n2. **Economic Stability**: By managing your finances effectively, you can avoid debt, save for emergencies, and plan for retirement, contributing to personal and societal economic stability.\n   \n3. **Better Financial Decisions**: With a solid understanding of financial concepts, you can make better choices regarding investments, loans, and other financial products.\n\n## Key Components of Financial Literacy\n\n### Budgeting\n\nCreating and maintaining a budget is a fundamental skill in financial management. A budget helps you track income and expenses, ensuring that you live within your means. By setting financial goals and monitoring your spending, you can identify areas where you can save money.\n\n### Saving and Investing\n\nSaving is the foundation of financial security. It involves setting aside money for future needs or emergencies. Investing, on the other hand, involves putting money into assets such as stocks, bonds, or real estate to generate returns over time. Understanding the risk and potential returns of different investment options is crucial for growing your wealth.\n\n### Credit Management\n\nCredit can be a powerful financial tool if used wisely. Understanding how credit works, including interest rates and credit scores, is essential. A good credit score can help you secure loans with favorable terms, making major purchases like a home or car more affordable.\n\n### Retirement Planning\n\nPlanning for retirement ensures that you have enough money to live comfortably in your later years. It involves setting long-term savings goals and understanding retirement savings vehicles such as 401(k)s and IRAs.\n\n## Practical Tips to Improve Financial Literacy\n\n1. **Educate Yourself**: Take advantage of online resources, workshops, and courses to improve your financial knowledge. Websites like Investopedia and government resources provide valuable information on various financial topics.\n\n2. **Use Technology**: Financial apps and tools can help you manage your budget, track expenses, and monitor investments. Apps like Mint and Personal Capital offer easy-to-use platforms for financial management.\n\n3. **Seek Professional Advice**: Consider consulting a financial advisor for personalized advice. They can help you develop a financial plan that aligns with your goals.\n\n4. **Stay Informed**: Keep up with economic news and trends. Understanding the broader economic environment can help you make informed financial decisions.\n\n## Conclusion\n\nFinancial literacy is an essential life skill that can dramatically improve your financial well-being and security. By understanding and applying financial concepts, you can make informed decisions, avoid common pitfalls, and achieve your financial goals. Start your journey toward financial literacy today and take control of your financial future.\n\n### Call to Action\n\nBegin your financial literacy journey now! Explore resources, consult with experts, and leverage technology to enhance your understanding of personal finance. Remember, the more you know, the better equipped you'll be to navigate the financial landscape.",
+    "task_outputs": {
+      "adc760ba-27ba-4f38-bc41-6dbc6b798f68": "# Task Output: research\n\n**Task Type**: TaskType.RESEARCH\n**Agent Role**: None\n**Description**: Research comprehensive information about: Test Topic\n\n## Generated Content\n\nThis is a mock output for task 'research'.\nIn the full implementation, this would be replaced with actual AI agent execution.\n\n**Context Used**:\n- Client Profile: siebert\n- Target Audience: general\n- Topic: Test Topic\n\n**Execution Time**: 2025-07-25T12:40:57.517596",
+      "64fb6888-8fb7-4210-9a6b-e767c6b17669": "# Task Output: writing\n\n**Task Type**: TaskType.RESEARCH\n**Agent Role**: None\n**Description**: Create article content about: Test Topic\n\n## Generated Content\n\nThis is a mock output for task 'writing'.\nIn the full implementation, this would be replaced with actual AI agent execution.\n\n**Context Used**:\n- Client Profile: siebert\n- Target Audience: general\n- Topic: Test Topic\n\n**Execution Time**: 2025-07-25T12:40:57.517688",
+      "843e2e3b-a975-4d8d-872c-d0440d7be86a": "[TOOL_NAME ERROR] Tool not found [/TOOL_NAME ERROR]",
+      "4e88c543-263e-4c47-9eae-1278d85c48d0": "To enhance the brief from Task 1, I will first retrieve and analyze the existing brief created in Task 1 to identify any informational gaps. Then, I will conduct web research to find the latest trends, statistics, best practices, and relevant case studies related to the topic \"Test Topic\". Finally, I will integrate this information to refine and improve the brief.\n\nFirst, I need to retrieve the content of the brief from Task 1 to understand its current structure and content.\n\n[TOOL_NAME ERROR] Tool not found [/TOOL_NAME ERROR]",
+      "d82bc2ef-5f8d-4794-8e6f-a288ec61d687": "# Understanding the Basics of Financial Literacy: A Guide for Everyone\n\nIn today's fast-paced world, financial literacy is no longer a luxury but a necessity. Whether you're a student, a young professional, or nearing retirement, understanding how to manage your finances can significantly impact your quality of life. This article explores the key elements of financial literacy, tailored to a general audience, and provides insights into why it's crucial for everyone.\n\n## What is Financial Literacy?\n\nFinancial literacy refers to the ability to understand and effectively use various financial skills, including personal financial management, budgeting, and investing. It involves knowledge of financial principles and concepts such as financial planning, interest rates, compounding, credit management, and the benefits of saving for the future.\n\n### Importance of Financial Literacy\n\n1. **Empowerment**: Financial literacy empowers individuals to make informed decisions about their money. It helps you understand the implications of financial choices and enables you to plan for the future.\n   \n2. **Economic Stability**: By managing your finances effectively, you can avoid debt, save for emergencies, and plan for retirement, contributing to personal and societal economic stability.\n   \n3. **Better Financial Decisions**: With a solid understanding of financial concepts, you can make better choices regarding investments, loans, and other financial products.\n\n## Key Components of Financial Literacy\n\n### Budgeting\n\nCreating and maintaining a budget is a fundamental skill in financial management. A budget helps you track income and expenses, ensuring that you live within your means. By setting financial goals and monitoring your spending, you can identify areas where you can save money.\n\n### Saving and Investing\n\nSaving is the foundation of financial security. It involves setting aside money for future needs or emergencies. Investing, on the other hand, involves putting money into assets such as stocks, bonds, or real estate to generate returns over time. Understanding the risk and potential returns of different investment options is crucial for growing your wealth.\n\n### Credit Management\n\nCredit can be a powerful financial tool if used wisely. Understanding how credit works, including interest rates and credit scores, is essential. A good credit score can help you secure loans with favorable terms, making major purchases like a home or car more affordable.\n\n### Retirement Planning\n\nPlanning for retirement ensures that you have enough money to live comfortably in your later years. It involves setting long-term savings goals and understanding retirement savings vehicles such as 401(k)s and IRAs.\n\n## Practical Tips to Improve Financial Literacy\n\n1. **Educate Yourself**: Take advantage of online resources, workshops, and courses to improve your financial knowledge. Websites like Investopedia and government resources provide valuable information on various financial topics.\n\n2. **Use Technology**: Financial apps and tools can help you manage your budget, track expenses, and monitor investments. Apps like Mint and Personal Capital offer easy-to-use platforms for financial management.\n\n3. **Seek Professional Advice**: Consider consulting a financial advisor for personalized advice. They can help you develop a financial plan that aligns with your goals.\n\n4. **Stay Informed**: Keep up with economic news and trends. Understanding the broader economic environment can help you make informed financial decisions.\n\n## Conclusion\n\nFinancial literacy is an essential life skill that can dramatically improve your financial well-being and security. By understanding and applying financial concepts, you can make informed decisions, avoid common pitfalls, and achieve your financial goals. Start your journey toward financial literacy today and take control of your financial future.\n\n### Call to Action\n\nBegin your financial literacy journey now! Explore resources, consult with experts, and leverage technology to enhance your understanding of personal finance. Remember, the more you know, the better equipped you'll be to navigate the financial landscape."
+    },
+    "metadata": {},
+    "execution_time": 23.754537,
+    "error_message": null
+  },
+  "created_at": "2025-07-25T12:40:57.514007",
+  "started_at": "2025-07-25T12:40:57.517006",
+  "completed_at": "2025-07-25T12:41:21.271556",
+  "metadata": {}
+}

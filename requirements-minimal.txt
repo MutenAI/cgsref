@@ -1,0 +1,26 @@
+# Minimal dependencies for testing CGSRef
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# API dependencies
+fastapi>=0.100.0
+uvicorn[standard]>=0.20.0
+
+# Utilities
+typer>=0.9.0
+rich>=13.0.0
+httpx>=0.24.0
+
+# Testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# AI dependencies (minimal)
+openai>=1.0.0
+
+# YAML support
+PyYAML>=6.0
+
+# HTTP requests
+requests>=2.31.0
