@@ -64,10 +64,10 @@ class ProviderConfig:
     def _get_default_model(self) -> str:
         """Get default model for the provider."""
         defaults = {
-            LLMProvider.OPENAI: "gpt-4o",
+            LLMProvider.OPENAI: "gpt-4o-2024-11-20",
             LLMProvider.ANTHROPIC: "claude-3-5-sonnet-20241022",
             LLMProvider.DEEPSEEK: "deepseek-chat",
-            LLMProvider.GOOGLE: "gemini-1.5-pro"
+            LLMProvider.GOOGLE: "gemini-1.5-pro-002"
         }
         return defaults.get(self.provider, "gpt-4o")
     
@@ -78,10 +78,16 @@ class ProviderConfig:
                 "gpt-3.5-turbo",
                 "gpt-4",
                 "gpt-4-turbo",
+                "gpt-4-turbo-2024-04-09",
                 "gpt-4o",
+                "gpt-4o-2024-11-20",
+                "gpt-4o-2024-08-06",
+                "gpt-4o-2024-05-13",
                 "gpt-4o-mini",
                 "o1",
+                "o1-2024-12-17",
                 "o1-mini",
+                "o1-mini-2024-09-12",
                 "o1-pro",
                 "o3-mini"
             ],
@@ -98,9 +104,12 @@ class ProviderConfig:
             ],
             LLMProvider.GOOGLE: [
                 "gemini-1.5-pro",
+                "gemini-1.5-pro-002",
                 "gemini-1.5-flash",
+                "gemini-1.5-flash-002",
+                "gemini-1.5-flash-8b",
                 "gemini-1.0-pro",
-                "gemini-pro-vision"
+                "gemini-2.0-flash-exp"
             ]
         }
         return models.get(self.provider, [])
@@ -186,7 +195,7 @@ class ProviderConfig:
         )
     
     @classmethod
-    def create_openai_config(cls, model: str = "gpt-4o", temperature: float = 0.7) -> "ProviderConfig":
+    def create_openai_config(cls, model: str = "gpt-4o-2024-11-20", temperature: float = 0.7) -> "ProviderConfig":
         """Create OpenAI configuration."""
         return cls(
             provider=LLMProvider.OPENAI,
@@ -213,7 +222,7 @@ class ProviderConfig:
         )
 
     @classmethod
-    def create_google_config(cls, model: str = "gemini-1.5-pro", temperature: float = 0.7) -> "ProviderConfig":
+    def create_google_config(cls, model: str = "gemini-1.5-pro-002", temperature: float = 0.7) -> "ProviderConfig":
         """Create Google Gemini configuration."""
         return cls(
             provider=LLMProvider.GOOGLE,

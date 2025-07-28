@@ -12,7 +12,7 @@ class ProviderSettings(BaseModel):
     # OpenAI settings
     openai_api_key: Optional[str] = None
     openai_base_url: Optional[str] = None
-    openai_default_model: str = "gpt-4o"
+    openai_default_model: str = "gpt-4o-2024-11-20"
     
     # Anthropic settings
     anthropic_api_key: Optional[str] = None
@@ -27,7 +27,7 @@ class ProviderSettings(BaseModel):
     # Google settings
     google_api_key: Optional[str] = None
     google_base_url: Optional[str] = None
-    google_default_model: str = "gemini-1.5-pro"
+    google_default_model: str = "gemini-1.5-pro-002"
     
     def get_provider_config(self, provider: LLMProvider, model: Optional[str] = None) -> ProviderConfig:
         """Get provider configuration for specific provider."""

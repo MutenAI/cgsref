@@ -70,7 +70,7 @@ class Settings(BaseSettings):
     
     # Content generation settings
     default_provider: str = Field(default="openai", env="DEFAULT_PROVIDER")
-    default_model: str = Field(default="gpt-4o", env="DEFAULT_MODEL")
+    default_model: str = Field(default="gpt-4o-2024-11-20", env="DEFAULT_MODEL")
     default_temperature: float = Field(default=0.7, env="DEFAULT_TEMPERATURE")
     max_tokens: Optional[int] = Field(default=None, env="MAX_TOKENS")
     
