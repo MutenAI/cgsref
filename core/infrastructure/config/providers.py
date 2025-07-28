@@ -23,29 +23,41 @@ class ProviderSettings(BaseModel):
     deepseek_api_key: Optional[str] = None
     deepseek_base_url: Optional[str] = None
     deepseek_default_model: str = "deepseek-chat"
+
+    # Google settings
+    google_api_key: Optional[str] = None
+    google_base_url: Optional[str] = None
+    google_default_model: str = "gemini-1.5-pro"
     
-    def get_provider_config(self, provider: LLMProvider) -> ProviderConfig:
+    def get_provider_config(self, provider: LLMProvider, model: Optional[str] = None) -> ProviderConfig:
         """Get provider configuration for specific provider."""
         if provider == LLMProvider.OPENAI:
             return ProviderConfig(
                 provider=provider,
-                model=self.openai_default_model,
+                model=model or self.openai_default_model,
                 api_key=self.openai_api_key,
                 base_url=self.openai_base_url
             )
         elif provider == LLMProvider.ANTHROPIC:
             return ProviderConfig(
                 provider=provider,
-                model=self.anthropic_default_model,
+                model=model or self.anthropic_default_model,
                 api_key=self.anthropic_api_key,
                 base_url=self.anthropic_base_url
             )
         elif provider == LLMProvider.DEEPSEEK:
             return ProviderConfig(
                 provider=provider,
-                model=self.deepseek_default_model,
+                model=model or self.deepseek_default_model,
                 api_key=self.deepseek_api_key,
                 base_url=self.deepseek_base_url
+            )
+        elif provider == LLMProvider.GOOGLE:
+            return ProviderConfig(
+                provider=provider,
+                model=model or self.google_default_model,
+                api_key=self.google_api_key,
+                base_url=self.google_base_url
             )
         else:
             raise ValueError(f"Unsupported provider: {provider}")
@@ -55,7 +67,8 @@ class ProviderSettings(BaseModel):
         return {
             "openai": bool(self.openai_api_key),
             "anthropic": bool(self.anthropic_api_key),
-            "deepseek": bool(self.deepseek_api_key)
+            "deepseek": bool(self.deepseek_api_key),
+            "google": bool(self.google_api_key)
         }
     
     def has_any_provider(self) -> bool:

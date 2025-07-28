@@ -35,6 +35,7 @@ class Settings(BaseSettings):
     openai_api_key: Optional[str] = Field(default=None, env="OPENAI_API_KEY")
     anthropic_api_key: Optional[str] = Field(default=None, env="ANTHROPIC_API_KEY")
     deepseek_api_key: Optional[str] = Field(default=None, env="DEEPSEEK_API_KEY")
+    google_api_key: Optional[str] = Field(default=None, env="GOOGLE_API_KEY")
     serper_api_key: Optional[str] = Field(default=None, env="SERPER_API_KEY")
     
     # Database settings
